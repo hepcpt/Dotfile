@@ -1,0 +1,25 @@
+# GITLAB
+Host cepcgit.ihep.ac.cn
+   HostName cepcgit.ihep.ac.cn
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa_cepclab
+
+# GITHUB
+Host github.com
+   HostName github.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa_github
+
+# dinggj01
+Host hepcpt_dinggj01
+     HostName   202.38.85.27
+     User       hepcpt
+
+Host node_dinggj01
+     HostName   202.38.85.27
+     User       node
+
+# dinggj02
+Host node_dinggj02
+     Hostname   hepcpt@202.38.85.227
+     User       node
