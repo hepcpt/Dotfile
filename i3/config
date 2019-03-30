@@ -4,16 +4,8 @@
 # Set mod keys (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-# Load notification daemon
-#exec dunst
-# Set wallpaper(s)
-#exec nitrogen --restore
-# keys
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
-# terminal
-#exec urxvtd -q -o -f
-#bindsym $mod+Return exec --no-startup-id urxvtc
-bindsym $mod+Return exec --no-startup-id termite
+# Terminal
+bindsym $mod+Return exec termite
 # rofi
 bindsym $mod+Up exec --no-startup-id rofi -show run
 # kill container
@@ -51,12 +43,16 @@ bindsym $mod+Control+l move right
 bindsym $mod+t split toggle
 
 # scratchpad
-bindsym grave scratchpad show
-bindsym $mod+grave move scratchpad
+bindsym $mod+grave scratchpad show
+bindsym $mod+Control+grave move scratchpad
 
 # floating windows
 floating_modifier $mod
 bindsym $mod+space floating toggle
+
+# change container layout
+bindsym $mod+w layout toggle tabbed stacking
+bindsym $mod+q layout toggle split
 
 # workspace names / font-awesome
 set $ws1 "01 "
@@ -196,3 +192,10 @@ client.urgent           $orange $orange $bg $darkgray $darkgray
 
 #end of window title bars & borders section
 
+# i3-gaps
+gaps inner 10
+gaps outer 05
+smart_gaps on
+
+# i3lock
+bindsym Control+$Mod+Delete exec i3lock -i "/home/hepcpt/Documents/Picture/Squirtle.png"
