@@ -151,8 +151,8 @@ set $gray #a89984
 set $darkgray #1d2021
 
 # font used by i3 for titles and bars
-#font pango: Hack 10
-font pango: Source Han Sans CN 10
+font pango: Hack 10
+#font pango: Source Han Sans CN 10
 #font pango: FontAwesome 8
 
 #start of bar section

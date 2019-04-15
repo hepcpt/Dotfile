@@ -12,14 +12,10 @@ Host github.com
 
 # dinggj01
 Host hepcpt_dinggj01
-     HostName   202.38.85.27
+     HostName   202.38.85.100
      User       hepcpt
 
-Host node_dinggj01
-     HostName   202.38.85.27
-     User       node
-
 # dinggj02
-Host node_dinggj02
-     Hostname   202.38.85.227
-     User       node
+Host hepcpt_dinggj02
+     Hostname   202.38.85.187
+     User       hepcpt
